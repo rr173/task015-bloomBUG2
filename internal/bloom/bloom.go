@@ -68,7 +68,7 @@ func OptimalK(m, n uint64) uint64 {
 		return 1
 	}
 	k := float64(m) / float64(n) * ln2
-	r := math.Floor(k)
+	r := math.Round(k)
 	if r < 1 {
 		r = 1
 	}
